@@ -4,7 +4,7 @@ on: [push]
 
 env:
   REGISTRY_HOSTNAME: oda2
-  IMAGE_NAME: ibmcloud-login
+  IMAGE_NAME: ibmcloud-cli
 
 jobs:
   build:
@@ -16,6 +16,6 @@ jobs:
 
       - name: build
         env:
-          IMAGE_TAG: ${{ steps.vars.outputs.tag }}
+          IMAGE_TAG: latest
         run: |
           docker build -t "$REGISTRY_HOSTNAME"/"$IMAGE_NAME":"$IMAGE_TAG" .
