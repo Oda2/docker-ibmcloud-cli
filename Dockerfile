@@ -1,5 +1,5 @@
 FROM alpine:3
-LABEL org.opencontainers.image.authors="Renato Oda <renato.oda2@gmail.com>"
+LABEL maintainer="Renato Oda <renato.oda2@gmail.com>"
 
 WORKDIR /app
 

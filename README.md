@@ -9,8 +9,8 @@
 
 ## Prerequisites
 
-  - Docker
-  - IBM API Key [IAM API Keys](https://cloud.ibm.com/iam/apikeys)
+- Docker
+- IBM API Key [IAM API Keys](https://cloud.ibm.com/iam/apikeys)
 
 ## Getting started
 
@@ -23,6 +23,13 @@ docker run -it \
   -e IBM_CLOUD_REGION=MY_REGION \
   oda2/ibmcloud-cli sh
 ```
+
+## Plugins Installed default
+
+- kubernetes-service
+- container-registry
+- schematics
+- cloud-object-storage
 
 ## How is this useful
 
