@@ -3,7 +3,7 @@ LABEL maintainer="Renato Oda <renato.oda2@gmail.com>"
 
 WORKDIR /app
 
-RUN apk update && apk add bash curl docker
+RUN apk update && apk add bash curl docker openssl
 RUN curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 RUN ibmcloud --version && \
     ibmcloud config --check-version=false && \
