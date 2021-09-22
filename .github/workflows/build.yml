@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  REGISTRY_HOSTNAME: oda2
+  REGISTRY_HOSTNAME: globalhealthmonitor
   IMAGE_NAME: ibmcloud-cli
 
 jobs:

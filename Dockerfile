@@ -1,5 +1,5 @@
 FROM alpine:3
-LABEL maintainer="Renato Oda <renato.oda2@gmail.com>"
+LABEL maintainer="Global Health Monitor <app@ghm.world>"
 
 WORKDIR /app
 

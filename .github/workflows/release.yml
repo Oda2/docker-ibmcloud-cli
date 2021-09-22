@@ -7,7 +7,7 @@ on:
     types: [created]
 
 env:
-  REGISTRY_HOSTNAME: oda2
+  REGISTRY_HOSTNAME: globalhealthmonitor
   IMAGE_NAME: ibmcloud-cli
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: oda2/ibmcloud-cli:latest
+          tags: globalhealthmonitor/ibmcloud-cli:latest
 
       # - name: Push to GitHub Packages
       #   uses: docker/build-push-action@v2
@@ -41,5 +41,5 @@ jobs:
       #     username: ${{ github.actor }}
       #     password: ${{ secrets.GITHUB_TOKEN }}
       #     registry: docker.pkg.github.com
-      #     repository: oda2/docker-ibmcloud-cli:latest
+      #     repository: globalhealthmonitor/docker-ibmcloud-cli:latest
       #     push: true
