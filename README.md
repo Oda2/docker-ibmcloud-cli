@@ -6,6 +6,7 @@
 ![Main Branch](https://github.com/oda2/docker-ibmcloud-cli/actions/workflows/build.yml/badge.svg?branch=main)
 [![GitHub license](https://img.shields.io/github/license/Oda2/docker-ibmcloud-cli)](https://github.com/Oda2/docker-ibmcloud-cli/blob/main/LICENSE)
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/oda2/ibmcloud-cli/latest)](https://hub.docker.com/r/oda2/ibmcloud-cli)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fdocker-ibmcloud-cli.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fdocker-ibmcloud-cli?ref=badge_shield)
 
 ## Prerequisites
 
@@ -37,3 +38,5 @@ Instead of using the ibmcloud login installation in our CI, this container will 
 
 ### License
 Licensed under [MIT](https://github.com/Oda2/docker-ibmcloud-cli/blob/main/LICENSE)
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fdocker-ibmcloud-cli.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fdocker-ibmcloud-cli?ref=badge_large)
