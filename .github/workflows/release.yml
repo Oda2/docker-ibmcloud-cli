@@ -1,10 +1,9 @@
 name: Release
 
 on:
-  schedule:
-    - cron: '0 10 */5 * *'
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 env:
   REGISTRY_HOSTNAME: oda2
@@ -23,7 +22,7 @@ jobs:
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
       - name: Login to DockerHub
-        uses: docker/login-action@v1 
+        uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
@@ -34,12 +33,3 @@ jobs:
         with:
           push: true
           tags: oda2/ibmcloud-cli:latest
-
-      # - name: Push to GitHub Packages
-      #   uses: docker/build-push-action@v2
-      #   with:
-      #     username: ${{ github.actor }}
-      #     password: ${{ secrets.GITHUB_TOKEN }}
-      #     registry: docker.pkg.github.com
-      #     repository: oda2/docker-ibmcloud-cli:latest
-      #     push: true
